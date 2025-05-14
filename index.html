@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golf Gear Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #006633, #00a86b);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.3em;
+    }
+    nav {
+      background-color: #004d26;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 400px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.8em;
+      background-color: rgba(0,0,0,0.6);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    .hero a {
+      margin-top: 20px;
+      padding: 14px 30px;
+      background-color: #ffcc00;
+      color: #004d26;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+    .search-bar {
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .search-bar input {
+      padding: 12px;
+      width: 90%;
+      max-width: 500px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .products {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .category {
+      margin-bottom: 50px;
+    }
+    .category h2 {
+      font-size: 2em;
+      border-bottom: 3px solid #00a86b;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      color: #004d26;
+    }
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 25px;
+    }
+    .product {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .product h4 {
+      margin: 10px 0 5px;
+      font-size: 1.1em;
+    }
+    .product p {
+      color: #00a86b;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #004d26;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Golf Gear Shop</h1>
+    <p>Premium golf gear and clothing for every player</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero" id="home">
+    <h2>Welcome to Your Golfing Paradise</h2>
+    <a href="#shop">Shop Now</a>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search golf gear...">
+  </div>
+
+  <div class="products" id="shop">
+    <div class="category">
+      <h2>Golf Clubs</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="https://tse2.mm.bing.net/th?id=OIP.Bi3E7qQ-xa1-I1y907rb1QHaHa&pid=Api" alt="Driver">
+          <h4>Driver</h4>
+          <p>$349.99</p>
+        </div>
+        <div class="product">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.iizZ4cP19ONzU-0VDFZf2AHaFj&pid=Api" alt="Irons">
+          <h4>Irons Set</h4>
+          <p>$699.99</p>
+        </div>
+        <div class="product">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.pn2CcaAvePNHNBWekePRowHaLH&pid=Api" alt="Wedges">
+          <h4>Wedges</h4>
+          <p>$129.99</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Golf Bags</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.LOEesy0c8BUbf3t0zlg49QHaHa&pid=Api" alt="Cart Bag">
+          <h4>Cart Bag</h4>
+          <p>$199.99</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Golf Gear Shop. Created by Darcy Dunk.</p>
+  </footer>
+
+</body>
+</html>
